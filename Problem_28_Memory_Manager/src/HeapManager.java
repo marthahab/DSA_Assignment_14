@@ -44,7 +44,25 @@ public class HeapManager {
                 System.out.println("Index " + i + ": " + status + ", references: " + block.references);
             }
         }
+
+    // Add this inside HeapManager class
+    public void addReference(int fromIndex, int toIndex) {
+        if (fromIndex >= 0 && fromIndex < heap.length &&
+                toIndex >= 0 && toIndex < heap.length) {
+
+            if (heap[fromIndex].allocated && heap[toIndex].allocated) {
+                heap[fromIndex].references.add(toIndex);
+                System.out.println("Reference added: Block " + fromIndex + " -> Block " + toIndex);
+            } else {
+                System.out.println("Both blocks must be allocated to create a reference.");
+            }
+
+        } else {
+            System.out.println("Invalid block indices.");
+        }
     }
+
+}
 
 
 
