@@ -1,32 +1,38 @@
 package Problem_28_Memory_Manager.src;
 
-import java.util.LinkedList;
 
 public class FreeList {
 
-    private LinkedList<Integer> freeIndices;
+    class FreeNode {
+        int index;
+        FreeNode next;
 
-    public FreeList() {
-        freeIndices = new LinkedList<>();
-    }
-
-    public void add(int index) {
-        freeIndices.add(index);
-    }
-
-    public int getFirstFree() {
-        if (!freeIndices.isEmpty()) {
-            return freeIndices.removeFirst();
+        FreeNode(int index) {
+            this.index = index;
+            this.next = null;
         }
-        return -1;
     }
 
-    public boolean isEmpty() {
-        return freeIndices.isEmpty();
+    public class FreeList {
+        private FreeNode head;
+
+        public void add(int index) {
+            FreeNode node = new FreeNode(index);
+            node.next = head;
+            head = node;
+        }
+
+        public int get() {
+            if (head == null) return -1;
+            int index = head.index;
+            head = head.next;
+            return index;
+        }
+
+        public boolean isEmpty() {
+            return head == null;
+        }
     }
 
-    public void printFreeList() {
-        System.out.println("FreeList: " + freeIndices);
-    }
 }
 

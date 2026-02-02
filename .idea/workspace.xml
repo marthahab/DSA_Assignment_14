@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb79e00-f15c-4465-b444-638e7a901bd7" name="Changes" comment="" />
+    <list default="true" id="dfb79e00-f15c-4465-b444-638e7a901bd7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/InStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/FreeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/FreeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/GarbageCollactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/GarbageCollactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/HeapManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/HeapManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/MemoryBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/MemoryBlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/RootSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Problem_28_Memory_Manager/src/RootSet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="392A14IxvCTaYhLvhymJ3VXhIvZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,7 +36,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "martha",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,6 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769883573770</updated>
       <workItem from="1769883577835" duration="9929000" />
+      <workItem from="1770015014927" duration="3411000" />
     </task>
     <servers />
   </component>

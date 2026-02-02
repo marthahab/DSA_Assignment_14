@@ -1,34 +1,49 @@
 package Problem_28_Memory_Manager.src;
-import java.util.HashSet;
-import java.util.Set;
 
 public class RootSet {
 
+    private int[] roots;
+    private int count;
 
-    public class RootSet {
+    public RootSet(int size) {
+        roots = new int[size];
+        count = 0;
+    }
 
-        private Set<Integer> roots;
-
-        public RootSet() {
-            roots = new HashSet<>();
+    public void addRoot(int index) {
+        for (int i = 0; i < count; i++) {
+            if (roots[i] == index) return;
         }
+        roots[count++] = index;
+    }
 
-        public void addRoot(int index) {
-            roots.add(index);
-        }
-
-        public void removeRoot(int index) {
-            roots.remove(index);
-        }
-
-        public Set<Integer> getRoots() {
-            return roots;
-        }
-
-        public void printRoots() {
-            System.out.println("Roots: " + roots);
+    public void removeRoot(int index) {
+        for (int i = 0; i < count; i++) {
+            if (roots[i] == index) {
+                roots[i] = roots[count - 1];
+                count--;
+                return;
+            }
         }
     }
 
-    
+    public int[] getRoots() {
+        int[] result = new int[count];
+        for (int i = 0; i < count; i++) result[i] = roots[i];
+        return result;
+    }
+
+    public void printRoots() {
+        System.out.print("Roots: [");
+        for (int i = 0; i < count; i++) {
+            System.out.print(roots[i]);
+            if (i < count - 1) System.out.print(", ");
+        }
+        System.out.println("]");
+    }
+
+    public int getCount() {
+        return count;
+    }
 }
+

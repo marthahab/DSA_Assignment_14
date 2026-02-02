@@ -1,26 +1,29 @@
 package Problem_28_Memory_Manager.src;
-import java.util.ArrayList;
-import java.util.List;
 
 public class MemoryBlock {
 
+    public class MemoryBlock {
         boolean allocated;
-
         boolean visited;
-
-        List<Integer> references;
+        int[] references;
+        int refCount;
 
         public MemoryBlock() {
-            this.allocated = false;
-            this.visited = false;
-            this.references = new ArrayList<>();
+            allocated = false;
+            visited = false;
+            references = new int[10];
+            refCount = 0;
         }
 
+        public void addReference(int index) {
+            references[refCount++] = index;
+        }
 
-        public void resetVisited() {
-            this.visited = false;
+        public void clearReferences() {
+            refCount = 0;
         }
     }
+
 
 
 
