@@ -1,5 +1,4 @@
 
-
 public class RootSet {
 
     private int[] roots;

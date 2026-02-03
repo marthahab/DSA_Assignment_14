@@ -1,5 +1,4 @@
 
-
 public class InStack {
 
     private int[] stack;

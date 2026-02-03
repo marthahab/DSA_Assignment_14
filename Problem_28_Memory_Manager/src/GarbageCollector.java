@@ -1,5 +1,4 @@
 
-
 public class GarbageCollector {
 
     private HeapManager heapManager;
@@ -53,6 +52,7 @@ public class GarbageCollector {
             MemoryBlock block = heap[i];
             if (block.allocated && !block.visited) {
                 heapManager.freeBlock(i);
+                heapManager.getFreeList().add(i);  // <-- add to FreeList
                 freed++;
                 System.out.println("Block " + i + " freed");
             } else if (block.allocated) {
@@ -62,4 +62,5 @@ public class GarbageCollector {
 
         System.out.println("Freed " + freed + " block(s).");
     }
+
 }
